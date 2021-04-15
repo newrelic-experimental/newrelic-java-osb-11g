@@ -1,0 +1,6 @@
+Add these jars from your installation
+com.bea.core.weblogic.web.api.jar
+com.bea.core.weblogic.workmanager.jar
+http-transport-wls.jar
+oracle.servicebus.configfwk.jar
+sb-kernel-api.jar

@@ -1,0 +1,9 @@
+Add these jars from your installation
+com.bea.alsb.pipeline-api.jar
+com.bea.common.configfwk_1.7.0.0.jar
+com.ibm.mq.headers.jar
+com.ibm.mq.jar
+mq-connection.jar
+mq-transport.jar
+sb-kernel-api.jar
+sb-kernel-impl.jar
