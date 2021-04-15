@@ -4,6 +4,8 @@
 apply plugin: 'java'
 
 dependencies {
+   implementation 'javax.jms:javax.jms-api:2.0'
+   implementation 'javax.resource:javax.resource-api:1.7'
    implementation fileTree(include: ['*.jar'], dir: 'lib')
 
    // New Relic Java Agent dependencies
