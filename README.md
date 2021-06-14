@@ -30,12 +30,18 @@ To build the extension jars from source, follow these steps:
 ### Build single extension
 To build a single extension with name *extension*, do the following:
 1. Set an environment variable *NEW_RELIC_EXTENSIONS_DIR* and set its value to the directory where you want the jar file built.
-2. Run the command: gradlew *extension*:clean *extension*:install
+2. Check the lib directory for the list of OSB 11g jars to include in order to build.  The list is in holder.txt.
+3. Run the command: gradlew *extension*:clean *extension*:install
 ### Build all extensions
 To build all extensions, do the following:
 1. Set an environment variable *NEW_RELIC_EXTENSIONS_DIR* and set its value to the directory where you want the jar file built.
-2. Run the command: gradlew clean install.  
+2. Check the lib directory for the list of OSB 11g jars to include in order to build for each extension.  The list is in holder.txt.
+3. Run the command: gradlew clean install.  
 
+#### Example - Building OSB-Http-11g extension
+1.  Set an environment variable *NEW_RELIC_EXTENSIONS_DIR*
+2.  Add the following jar files to the lib directory:  com.bea.core.weblogic.web.api.jar, com.bea.core.weblogic.workmanager.jar, http-transport-wls.jar, oracle.servicebus.configfwk.jar, sb-kernel-api.jar
+3.  Run this command:  gradlew OSB-Http-11g:clean OSB-Http-11g:install
 
 ## Support
 
