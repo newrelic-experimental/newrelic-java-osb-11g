@@ -25,7 +25,7 @@ Building the extension requires that Gradle is installed.
   
 **Because Oracle Service Bus is not an open source framework, it is assumed that you have access to a valid OSB instance in order to build the extensons.  You will need to copy jar files from your installation to the lib directory of the extension that you want to build.  Each lib directory contains a holder.txt file that contains the list of necessary jar files from your installation.**  
    
-Note that the build depends on Gradle 6.x or later.  If you are using an earlier version of Gradle you will need to make a change to settings.gradle as outlined here: https://github.com/alexvasilkov/GradleGitDependenciesPlugin.   
+Note that the build depends on Gradle 6.x or later.  If you are using an earlier version of Gradle you will need to replace settings.gradle with settings.gradle-pre-6
 
 To build the extension jars from source, follow these steps:
 To build the extension jars from source, follow these steps:
