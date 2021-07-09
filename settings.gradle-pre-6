@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.alexvasilkov:gradle-git-dependencies:2.0.4'
+    }
+}
+
+apply plugin: 'com.alexvasilkov.git-dependencies'
+git {
+    fetch 'https://github.com/newrelic/newrelic-java-agent.git', {
+        dir "$rootDir/newrelic-agent/"
+        tag 'v6.0.0'
+    }
+}
+rootProject.name = 'java-instrumentation-template'
+include 'OSB-Adapters-11G'
+include 'OSB-HTTP-11g'
+include 'OSB-JCA-11g'
+include 'OSB-JMS-11g'
+include 'OSB-MDB-11g'
+include 'OSB-MQ-11g'
+include 'OSB-Pipeline-11g'
